@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Journey</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>My Learning Journey</h1>
+        <nav>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'about_me' %}">About Me</a>
+        </nav>
+    </header>
+
+    <section class="timeline">
+        <h2>Timeline of My Learning Journey</h2>
+        {% if timeline_events %}
+            {% for event in timeline_events %}
+                <div class="timeline-item">
+                    <h3>{{ event.year }} - {{ event.title }}</h3>
+                    <p>{{ event.description }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No timeline events found.</p>
+        {% endif %}
+    </section>
+
+    <footer>
+        <p>© 2025 My Learning Journey</p>
+    </footer>
+</body>
+</html>

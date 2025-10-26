@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6f61;
+}
+
+/* Timeline */
+.timeline {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.timeline-item {
+    background: rgba(255, 255, 255, 0.85);
+    margin: 20px 0;
+    padding: 20px 30px;
+    border-left: 5px solid #ff6f61;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-item h3 {
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.about h2 {
+    color: #ff6f61;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff6f61;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.about ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.about p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+/* Profile Picture */
+.profile-pic-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #ff6f61;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
